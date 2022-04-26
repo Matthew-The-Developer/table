@@ -1,0 +1,32 @@
+table {
+  width: 100%;
+
+  .actions-row {
+    position: relative;
+    top: -48px;
+    border-width: 0;
+
+    background-color: rgba($color: #219ebc, $alpha: 0.2);
+  }
+  
+  .mat-column-actions {
+    width: 0px;
+    position: relative;
+    .actions-overlay {
+      visibility: hidden;
+      width: 120px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+
+  tr.mat-row:hover .actions-overlay {
+    visibility: visible;
+  }
+}
+
